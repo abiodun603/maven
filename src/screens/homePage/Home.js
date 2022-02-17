@@ -4,8 +4,7 @@ import { Banner, Footer, Navbar, Partner, Start, Growth, Service } from '../../c
 const Home = () => {
   return (
 	<>	
-		{/* Navbar Component */}
-		<Navbar/>
+		
 		{/* BannerComponent */}
 		<Banner/>
 		{/* PartnersComponents */}

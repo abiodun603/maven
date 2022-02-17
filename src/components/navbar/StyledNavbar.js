@@ -34,16 +34,26 @@ export const NavList = styled.div `
 `
 
 export const NavLink = styled(Link)`
+    position: relative;
     color: ${COLORS.black};
     display: flex;
     align-items: center;
-    padding: 0 1.2rem;
+    margin: 0 1.2rem;
     height: 100%;
     cursor: pointer;
     ${FONTS.h5};
 
     &.active {
         color: ${COLORS.primary};
+
+        &:after{
+            position: absolute;
+            content: " ";
+            height:2px;
+            bottom: -4px;
+            width: 100%;
+            background: #00CCFF;
+        }
     }
 
     img{

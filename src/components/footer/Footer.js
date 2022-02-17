@@ -19,22 +19,22 @@ const Footer = () => {
                                 <NavLink to = "/" activeStyles>
                                     Home
                                 </NavLink>
-                                <NavLink to = "/about">
+                                <NavLink to = "/case">
                                     Use case
                                 </NavLink>
-                                <NavLink to = "/solution">
+                                <NavLink to = "/service">
                                     Services
                                 </NavLink>
-                                <NavLink to = "/event">
+                                <NavLink to = "/product">
                                     Product
                                 </NavLink>
-                                <NavLink to = "/contact">
+                                <NavLink to = "/train">
                                     Training
                                 </NavLink>
-                                <NavLink to = "/contact">
+                                <NavLink to = "/career">
                                     Career
                                 </NavLink>
-                                <NavLink to = "/contact">
+                                <NavLink to = "/about">
                                     About us
                                 </NavLink>
                                 <NavLink to = "/contact">
@@ -42,6 +42,7 @@ const Footer = () => {
                                 </NavLink>
                             </NavList>
                         </NavMenu>
+                        
                         <NavSocialLinks>
                             <NavSocialIcon>
                                 <FaInstagram/>

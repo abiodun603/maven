@@ -6,7 +6,7 @@ export const ServiceWrapper = styled.div `
     width: 100%;
     height: 100%;
     padding: 3rem 0;
-    background: #F3F3F4;
+    background: ${COLORS.white};
 `
 
 export const ServiceContainer = styled.div `
@@ -53,6 +53,12 @@ export const ServiceDescription = styled.div `
         color: ${COLORS.gray};
         margin-bottom: .5rem;
     } 
+
+    p{
+        /* ${FONTS.h4} */
+        color: ${COLORS.lightGray};
+        font-weight:400;
+    }
 `
 
 export const Avatar = styled.div `
