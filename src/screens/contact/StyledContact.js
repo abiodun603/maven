@@ -110,14 +110,15 @@ export const ContactCaption = styled.img `
 export const ContactFormContainer = styled.div `
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8rem  0;
 `
 export const ContactFormWrapper = styled.div `
     position: relative;
-    height: 78%;
+    height: 80%;
     width: 60%;
     display: flex;
     background: ${COLORS.lightGray1};
