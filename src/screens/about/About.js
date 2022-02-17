@@ -1,18 +1,19 @@
 import React from 'react'
 import { FONTS } from '../../assets/theme/theme'
+import { AboutWrapper } from './StyledAbout'
+import { serviceObjOne,serviceObjTwo, serviceObjThree } from '../../assets/data/service'
+import AboutDesc from '../../components/aboutComp/AboutDesc'
 
 const About = () => {
   return (
-    <div
-        style  = {{
-            width: "100vw",
-            height: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            ...FONTS.h1
-        }}
-    >About</div>
+    <>
+      {/* =========== SERVICE ============= */}
+      <AboutWrapper>
+          <AboutDesc {...serviceObjOne}/>
+          <AboutDesc {...serviceObjTwo}/>
+          <AboutDesc {...serviceObjThree}/>
+      </AboutWrapper>
+    </>
   )
 }
 
