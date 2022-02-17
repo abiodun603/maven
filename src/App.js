@@ -6,7 +6,7 @@ import {
 } from "react-router-dom"
 import { About, Blog, Career, Case, Contact, Home, Product, Service, Train } from "./screens";
 import GlobalStyle from "./globalStyles"
-import { Navbar} from "./components";
+import { Footer, Navbar} from "./components";
 
 function App() {
   return (
@@ -25,6 +25,8 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
 		</Routes>
+    {/* Footer Component */}
+    <Footer/>
     </BrowserRouter>
       // <GlobalStyle/>
     // </ThemeProvider>

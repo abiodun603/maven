@@ -6,6 +6,7 @@ import Service from "./homeComp/services/Service"
 import Growth from "./homeComp/growth/Growth"
 import Start from "./homeComp/start/Start"
 import Footer from "./footer/Footer"
+import ScrollTextarea from "./scrollTextarea/ScrollTextArea"
 export {
     Navbar,
     Button,
@@ -14,5 +15,6 @@ export {
     Start,
     Footer,
     Growth,
-    Service
+    Service,
+    ScrollTextarea
 }

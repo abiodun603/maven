@@ -1,40 +1,151 @@
 import React from 'react'
-import { ContactCaption, ContactColumnOne, ContactColumnTwo, ContactContainer, ContactDescription, ContactWrapper } from './StyledContact'
+import { Button, ContactBanner, ContactBannerWrapper, ContactCaption, ContactColumnOne, ContactColumnTwo, ContactContainer, ContactDescription, ContactForm, ContactFormContainer, ContactFormWrapper, ContactSocialIcon, ContactSocialLinks, ContactWrapper, FormWrapper, FromBx, Input, InputEmail } from './StyledContact'
 import contact from "../../assets/images/contact/contact.svg"
+import { MdLocationPin } from 'react-icons/md';
+import { FaEnvelope } from 'react-icons/fa';
+import { BsFillPhoneVibrateFill } from 'react-icons/bs';
+import {FaInstagram, FaLinkedinIn, FaTwitter} from "react-icons/fa"
+import { COLORS, FONTS } from '../../assets/theme/theme';
+import { ScrollTextarea } from '../../components';
+
 const Contact = () => {
   return (
     <>
-      <ContactWrapper>
-                <ContactContainer>
-                    {/*  BOX 1*/}
-                    <ContactColumnOne>
-                        {/* Head Title */}
-                        <h3>
-                            Contact
-                            {/* <img src={yellowsnake} alt="" style={{position:"absolute", top: 15, right: -30, zIndex:-100}}/> */}
+        <ContactWrapper>
+            <ContactContainer>
+                {/*  BOX 1*/}
+                <ContactColumnOne>
+                    {/* Head Title */}
+                    <h3>
+                        Contact
+                        {/* <img src={yellowsnake} alt="" style={{position:"absolute", top: 15, right: -30, zIndex:-100}}/> */}
 
-                        </h3>
-                        {/* Description */}
-                        <ContactDescription>
-                            {/* Sub Description` */}
+                    </h3>
+                    {/* Description */}
+                    <ContactDescription>
+                        {/* Sub Description` */}
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit pellentesque<br/>
+                            sodales egestas in nunc. Ipsum odio tincidunt nulla aliquam gravida fringilla<br/>
+                            ornare ullamcorper non. A ac hac egestas ut odio neque. Scelerisque ullamcorper lectus<br/>
+                            vitae varius mi elementum. 
+                        </p> 
+                    </ContactDescription>
+                </ContactColumnOne>
+                
+                {/* B0X 2 */}
+                <ContactColumnTwo>
+                    {/* image */}
+                    <div>
+                        <ContactCaption src={contact} alt=""/>
+                    </div>
+                </ContactColumnTwo>
+            </ContactContainer>
+        </ContactWrapper>
+        {/* Form Wrapper */}
+        <ContactFormContainer>
+            <ContactFormWrapper>
+                <ContactBanner>
+                    <ContactBannerWrapper>
+                        {/* title */}
+                        <h3>Contact us</h3>
+                        {/* Citys */}
+                        <div className = "city">
+                            <h4>UNITED STATES</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit pellentesque<br/>
-                                sodales egestas in nunc. Ipsum odio tincidunt nulla aliquam gravida fringilla<br/>
-                                ornare ullamcorper non. A ac hac egestas ut odio neque. Scelerisque ullamcorper lectus<br/>
-                                vitae varius mi elementum. 
-                            </p> 
-                        </ContactDescription>
-                    </ContactColumnOne>
-                    
-                    {/* B0X 2 */}
-                    <ContactColumnTwo>
-                        {/* image */}
-                        <div>
-                            <ContactCaption src={contact} alt=""/>
+                                #133, 630E Southlake Boulevard<br/>
+                                Southlake, Texas 76092
+                            </p>
                         </div>
-                    </ContactColumnTwo>
-                </ContactContainer>
-            </ContactWrapper>
+                        {/* Citys */}
+                        <div  className = "city">
+                            <h4>CANADA</h4>
+                            <p>
+                                #223, 7240 Rue Waverly<br/>
+                                Montreal, QC, H2R2Y8
+                            </p>
+                        </div>
+                        {/* Directions */}
+                        <div class="directions">
+                            <p>Get Direction</p>
+                            <div className = "contacts">
+                                <FaEnvelope/>
+                                <p>hello@mavencode.com</p>
+                            </div>
+
+                            <div className = "contacts">
+                                <BsFillPhoneVibrateFill/>
+                                <p>+234 12345678</p>
+                            </div>
+
+                            <div className = "contacts">
+                                <MdLocationPin/>
+                                <p>Get Direction</p>
+                            </div>
+                        </div>
+                        {/* solcial line */}
+                        <span
+                            style= {{
+                                ...FONTS.body4,
+                                color: COLORS.secondary,
+                                textAlign: "center",
+                                display: 'block',
+                                marginBottom: 10
+                            }}
+                        >Social Link</span>
+                        <ContactSocialLinks>
+                            <ContactSocialIcon>
+                                <FaInstagram/>
+                            </ContactSocialIcon>
+                            <ContactSocialIcon>
+                                <FaTwitter/>
+                            </ContactSocialIcon>
+                            <ContactSocialIcon>
+                                <FaLinkedinIn/>
+                            </ContactSocialIcon>
+                        </ContactSocialLinks>
+
+                    </ContactBannerWrapper>
+                </ContactBanner>
+                <FormWrapper>
+                    <ContactForm>
+                        <h2>Send a Message</h2>
+                        <p>
+                            Ready to begin your AI & ML Journey?<br/>
+                            Contact us below to get started
+                        </p>
+                        <FromBx>
+                            <Input 
+                                name= "text"
+                                type = "text " 
+                                required
+                                placeholder = "Name"   
+                            />
+                        </FromBx>
+                        <FromBx>
+                            <InputEmail
+                                placeholder = "Email"
+                                name = "email"
+                                required
+                            />
+                        </FromBx>
+
+                        <FromBx>
+                            <Input 
+                                name= "text"
+                                type = "text " 
+                                required
+                                placeholder = "Phone number"   
+                            />
+                        </FromBx>
+                        <ScrollTextarea/>
+                        <FromBx>
+                            <Button type="submit">Send</Button>
+                        </FromBx>
+                    </ContactForm>
+                </FormWrapper>
+            </ContactFormWrapper>
+        </ContactFormContainer>
     </>
   )
 }

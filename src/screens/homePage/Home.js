@@ -15,8 +15,6 @@ const Home = () => {
 		<Growth/>
 		{/* Get Start Component */}
 		<Start/>
-		{/* Footer Component */}
-		<Footer/>
 	</>
   )
 }
