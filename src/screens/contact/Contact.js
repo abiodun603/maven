@@ -6,42 +6,20 @@ import { FaEnvelope } from 'react-icons/fa';
 import { BsFillPhoneVibrateFill } from 'react-icons/bs';
 import {FaInstagram, FaLinkedinIn, FaTwitter} from "react-icons/fa"
 import { COLORS, FONTS } from '../../assets/theme/theme';
-import { ScrollTextarea } from '../../components';
+import {HeaderBanner, ScrollTextarea } from '../../components';
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <>
-        <ContactWrapper>
-            <ContactContainer>
-                {/*  BOX 1*/}
-                <ContactColumnOne>
-                    {/* Head Title */}
-                    <h3>
-                        Contact
-                        {/* <img src={yellowsnake} alt="" style={{position:"absolute", top: 15, right: -30, zIndex:-100}}/> */}
-
-                    </h3>
-                    {/* Description */}
-                    <ContactDescription>
-                        {/* Sub Description` */}
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit pellentesque<br/>
-                            sodales egestas in nunc. Ipsum odio tincidunt nulla aliquam gravida fringilla<br/>
-                            ornare ullamcorper non. A ac hac egestas ut odio neque. Scelerisque ullamcorper lectus<br/>
-                            vitae varius mi elementum. 
-                        </p> 
-                    </ContactDescription>
-                </ContactColumnOne>
-                
-                {/* B0X 2 */}
-                <ContactColumnTwo>
-                    {/* image */}
-                    <div>
-                        <ContactCaption src={contact} alt=""/>
-                    </div>
-                </ContactColumnTwo>
-            </ContactContainer>
-        </ContactWrapper>
+    <>  
+        {/* Header Banner Component */}
+        <HeaderBanner
+            title = "Contact"
+            src = {contact}
+        >
+            {/* <p> */}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit pellentesque <br/> sodales egestas in nunc. Ipsum odio tincidunt nulla aliquam gravida fringilla<br/>ornare ullamcorper non. A ac hac egestas ut odio neque. Scelerisque ullamcorper lectus<br/>
+            {/* </p> */}
+        </HeaderBanner>
         {/* Form Wrapper */}
         <ContactFormContainer>
             <ContactFormWrapper>

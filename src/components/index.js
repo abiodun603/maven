@@ -8,6 +8,7 @@ import Start from "./homeComp/start/Start"
 import Footer from "./footer/Footer"
 import ScrollTextarea from "./scrollTextarea/ScrollTextArea"
 import AboutDesc from "./aboutComp/AboutDesc"
+import HeaderBanner from "./headerBanner/HeadBanner"
 export {
     Navbar,
     Button,
@@ -18,5 +19,5 @@ export {
     Growth,
     Service,
     ScrollTextarea,
-    
-}
+    HeaderBanner
+}   

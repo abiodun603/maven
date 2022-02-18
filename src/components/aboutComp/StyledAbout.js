@@ -32,7 +32,6 @@ export const AboutTitle = styled.p`
     font-weight: 500;
 `
 export const AboutDescription = styled.p`
-    /* color: var(--black); */
     ${FONTS.h4};
     font-weight: 300;
     text-align: justify;
